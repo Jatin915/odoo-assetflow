@@ -7,36 +7,36 @@ import { FaShieldAlt } from "react-icons/fa";
 
 export default function Login() {
   return (
-    <div className="min-h-screen bg-blue-50 flex items-center justify-center p-6">
+    <div className="h-screen bg-blue-50 flex items-center justify-center p-4 overflow-hidden">
       <div className="relative w-full max-w-md">
 
         {/* Center Logo */}
-        <div className="absolute -top-9 left-1/2 -translate-x-1/2 z-10 w-18 h-18">
-          <div className="w-18 h-18 w-20 h-20 rounded-full bg-blue-600 border-4 border-white shadow-xl flex items-center justify-center">
+        <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-10">
+          <div className="w-20 h-20 rounded-full bg-blue-600 border-4 border-white shadow-xl flex items-center justify-center">
             <span className="text-white text-3xl font-bold">AF</span>
           </div>
         </div>
 
         {/* Card */}
-        <div className="bg-white rounded-3xl shadow-2xl pt-20 pb-8 px-8">
+        <div className="bg-white rounded-3xl shadow-2xl pt-16 pb-5 px-8">
 
           {/* Heading */}
-          <h1 className="text-4xl font-bold text-center">
+          <h1 className="text-3xl font-bold text-center">
             AssetFlow <span className="text-blue-600">ERP</span>
           </h1>
 
-          <p className="text-gray-500 text-center text-sm mt-2">
+          <p className="text-gray-500 text-center text-sm mt-1">
             Enterprise Asset & Resource Management Platform
           </p>
 
-          <div className="border-b border-gray-200 my-6"></div>
+          <div className="border-b border-gray-200 my-4"></div>
 
           {/* Welcome */}
-          <h2 className="text-3xl font-bold text-center">
+          <h2 className="text-2xl font-bold text-center">
             Welcome Back 👋
           </h2>
 
-          <p className="text-center text-gray-500 mb-6">
+          <p className="text-center text-gray-500 mb-4">
             Sign in to continue
           </p>
 
@@ -52,7 +52,7 @@ export default function Login() {
           />
 
           {/* Remember */}
-          <div className="flex justify-between items-center mb-5 text-sm">
+          <div className="flex justify-between items-center mb-4 text-sm">
             <label className="flex items-center gap-2 text-gray-700">
               <input
                 type="checkbox"
@@ -73,7 +73,7 @@ export default function Login() {
           <Button text="Sign In →" />
 
           {/* Divider */}
-          <div className="flex items-center my-6">
+          <div className="flex items-center my-4">
             <div className="flex-1 h-px bg-gray-300"></div>
 
             <span className="mx-4 text-gray-400 font-medium">
@@ -87,7 +87,7 @@ export default function Login() {
           <GoogleButton />
 
           {/* Signup */}
-          <p className="text-center mt-6">
+          <p className="text-center mt-4">
             New here?{" "}
             <Link
               to="/signup"
@@ -98,7 +98,7 @@ export default function Login() {
           </p>
 
           {/* Footer */}
-          <div className="mt-8 text-center text-gray-500 text-sm">
+          <div className="mt-5 text-center text-gray-500 text-xs">
             <p>
               Every new account is registered as an Employee.
             </p>
@@ -107,11 +107,11 @@ export default function Login() {
               Admin roles are assigned later.
             </p>
 
-            <p className="mt-5">
+            <p className="mt-3">
               © 2026 AssetFlow ERP
             </p>
 
-            <div className="flex justify-center items-center gap-2 mt-2">
+            <div className="flex justify-center items-center gap-2 mt-1">
               <FaShieldAlt />
               <span>Secure & Trusted</span>
             </div>

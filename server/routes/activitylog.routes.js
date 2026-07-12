@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { protect } = require('../middlewares/authMiddleware');
 const {
     createActivityLog,
     getActivityLogs,
@@ -6,6 +7,8 @@ const {
     updateActivityLog,
     deleteActivityLog,
 } = require('../controllers/activitylog.controller');
+
+router.use(protect);
 
 router.post('/', createActivityLog);
 router.get('/', getActivityLogs);

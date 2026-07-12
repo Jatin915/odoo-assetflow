@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { protect } = require('../middlewares/authMiddleware');
 const {
     createAllocation,
     getAllocations,
@@ -6,6 +7,8 @@ const {
     updateAllocation,
     deleteAllocation,
 } = require('../controllers/allocation.controller');
+
+router.use(protect);
 
 router.post('/', createAllocation);
 router.get('/', getAllocations);

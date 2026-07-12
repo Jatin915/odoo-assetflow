@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { protect } = require('../middlewares/authMiddleware');
 const {
     createAssetCategory,
     getAssetCategories,
@@ -6,6 +7,8 @@ const {
     updateAssetCategory,
     deleteAssetCategory,
 } = require('../controllers/assetCategory.controller');
+
+router.use(protect);
 
 router.post('/', createAssetCategory);
 router.get('/', getAssetCategories);

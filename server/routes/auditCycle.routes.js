@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { protect } = require('../middlewares/authMiddleware');
 const {
     createAuditCycle,
     getAuditCycles,
@@ -6,6 +7,8 @@ const {
     updateAuditCycle,
     deleteAuditCycle,
 } = require('../controllers/auditCycle.controller');
+
+router.use(protect);
 
 router.post('/', createAuditCycle);
 router.get('/', getAuditCycles);
