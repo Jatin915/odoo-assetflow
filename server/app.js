@@ -26,6 +26,9 @@ const maintenanceRoutes = require("./routes/maintenance.routes.js");
 // Resource Routes
 const resourceRoutes = require("./routes/resource.routes.js");
 
+// Role Routes
+const roleRoutes = require("./routes/role.routes.js");
+
 // Common Middlewares
 const {
   requestLogger,
@@ -73,6 +76,9 @@ app.use("/api/maintenance", maintenanceRoutes);
 
 // Resource
 app.use("/api/resources", resourceRoutes);
+
+// Role
+app.use("/api/roles", roleRoutes);
 
 // Health Check
 app.get("/", (req, res) => {
