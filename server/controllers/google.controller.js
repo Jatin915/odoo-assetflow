@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
-const User = require("../../models/User");
-const { verifyGoogleToken } = require("../../config/firebaseAdmin");
+const User = require("../models/User");
+const { verifyGoogleToken } = require("../config/firebaseAdmin");
 
 const isNonEmptyString = (value) => typeof value === "string" && value.trim().length > 0;
 
